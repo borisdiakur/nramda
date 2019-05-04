@@ -46,4 +46,4 @@ $ nr --use_strict
 
 **nramda** stores its session history under `~/.nr_repl_history`.
 
-Enjoy!
+Enjoy! 🐑
