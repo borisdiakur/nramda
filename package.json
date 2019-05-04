@@ -1,0 +1,53 @@
+{
+  "name": "nramda",
+  "version": "1.0.0",
+  "description": "Ramda REPL",
+  "main": "./lib/nr",
+  "bin": {
+    "nr": "./bin/nr"
+  },
+  "scripts": {
+    "coveralls": "rm -rf coverage && istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --exit -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "istanbul": "rm -rf coverage && istanbul cover ./node_modules/mocha/bin/_mocha --report html -- --exit && open coverage/lib/nr.js.html",
+    "lint": "eslint .",
+    "mocha": "mocha --reporter min test",
+    "test": "mocha test --exit && npm run lint"
+  },
+  "repository": "borisdiakur/nramda",
+  "keywords": [
+    "cli",
+    "console",
+    "fp",
+    "functional",
+    "functional programming",
+    "ramda",
+    "repl",
+    "shell",
+    "terminal"
+  ],
+  "author": "Boris Diakur <contact@borisdiakur.com> (https://github.com/borisdiakur)",
+  "contributors": [
+    "Boris Diakur <contact@borisdiakur.com> (https://github.com/borisdiakur)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "os-homedir": "^2.0.0",
+    "ramda": "^0.26.1",
+    "repl.history": "^0.1.4"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.1.4",
+    "mocha-lcov-reporter": "1.3.0"
+  },
+  "engines": {
+    "node": ">=9.0.0"
+  }
+}
