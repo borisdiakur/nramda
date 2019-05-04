@@ -37,7 +37,7 @@ It is possible to enable strict mode in Node.js >= 4.x:
 
 ```shell
 $ nr --use_strict
-nr >
+λ >
 ```
 
 ## Notes
