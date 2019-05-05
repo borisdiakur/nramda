@@ -31,7 +31,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "os-homedir": "^2.0.0",
     "ramda": "^0.26.1",
     "repl.history": "^0.1.4"
   },

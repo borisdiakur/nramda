@@ -4,7 +4,7 @@ var assert = require('assert')
 var fs = require('fs')
 var nr = require('../lib/nr')
 var line = nr.rli._events.line
-var osHomedir = require('os-homedir')
+var osHomedir = require('os').homedir()
 var path = require('path')
 var result = null
 
@@ -94,7 +94,7 @@ describe('nr', function () {
   })
 
   it('should save and load repl history across multiple sessions', function (done) {
-    var historyPath = path.join(osHomedir(), '.nr_repl_history')
+    var historyPath = path.join(osHomedir, '.nr_repl_history')
 
     // delete any previously created history file
     fs.unlinkSync(historyPath)
