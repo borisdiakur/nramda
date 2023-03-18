@@ -2,7 +2,7 @@
 
 Node.js REPL with [Ramda](https://ramdajs.com/)
 
-[![Coverage Status](https://coveralls.io/repos/borisdiakur/nramda/badge.svg?branch=master)](https://coveralls.io/r/borisdiakur/nramda?branch=master)
+[![Coverage Status](https://coveralls.io/repos/borisdiakur/nramda/badge.svg?branch=main)](https://coveralls.io/r/borisdiakur/nramda?branch=main)
 
 ## Why?
 Sometimes we use the Node.js REPL interface to experiment with code.
